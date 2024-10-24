@@ -10,12 +10,12 @@ This recipe is designed to make it easier to deploy cypress quickly.
 ## Installation Options
 This recipe has been tested to work on Ubuntu 22.04 using the following install method:
 
-### Chef Solo
+### Chef Zero
 
     sudo apt-get update
     sudo apt-get -y install git-core wget
-    wget https://packages.chef.io/files/stable/chefdk/3.2.30/ubuntu/18.04/chefdk_3.2.30-1_amd64.deb
-    sudo dpkg -i chefdk_3.2.30-1_amd64.deb
+    wget https://packages.chef.io/files/stable/chefdk/4.13.3/ubuntu/20.04/chefdk_4.13.3-1_amd64.deb
+    sudo dpkg -i chefdk_4.13.3-1_amd64.deb
     git clone https://github.com/projectcypress/cypress-recipe.git
     cd cypress-recipe
     git checkout cypress_v7
