@@ -25,7 +25,7 @@ To install Cypress only run
 
     sudo chef-client -z -j install_cypress.json
 
-Instructions for importing a bundle can be found [here](https://github.com/projectcypress/cypress/wiki/Cypress-4-Initial-Setup).
+Instructions for importing a bundle can be found [here](https://github.com/projectcypress/cypress/wiki/Cypress-Initial-Setup).
 
 ## Developing using Test Kitchen
 
