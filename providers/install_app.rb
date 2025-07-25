@@ -8,10 +8,10 @@ action :create do
 
   apt_repository "mongodb" do
     uri "http://repo.mongodb.org/apt/ubuntu"
-    distribution "jammy" + "/mongodb-org/6.0"
+    distribution "jammy" + "/mongodb-org/8.0"
     components ["multiverse"]
     keyserver "keyserver.ubuntu.com"
-    key "39bd841e4be5fb195a65400e6a26b1ae64c3c388"
+    key "4b0752c1bca238c0b4ee14dc41de058a4e7dca05"
   end
 
   apt_repository new_resource.name do
@@ -32,7 +32,7 @@ action :create do
     ].each do |pkg|
       package pkg do
         action install_action
-        version '6.0.6'
+        version '8.0.10'
       end
     end
   end
