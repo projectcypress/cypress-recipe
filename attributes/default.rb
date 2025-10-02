@@ -1,10 +1,11 @@
 # ATL Version (cypress only) ENV Vars
 default[:cypress][:cypress_env_vars] =
 {
+  "RAILS_ENV" => "production",
   "AUTO_APPROVE" => "false",
   "IGNORE_ROLES" => "false",
   "ENABLE_DEBUG_FEATURES" => "false",
-  "DEFAULT_ROLE" => "",
+  "DEFAULT_ROLE" => ""
 }
 default[:cypress][:cypress_internal_port] = 8000
 # this is the path which Cypress/CVU/CQM Execution will install itself to,
